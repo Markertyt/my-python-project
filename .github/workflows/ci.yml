@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: docker build -t my-python-app .
+      - run: docker build -t my-python-app -f Dockerfile.txt .
 
       - run: echo "Деплой виконано успішно (імітація)"
 
